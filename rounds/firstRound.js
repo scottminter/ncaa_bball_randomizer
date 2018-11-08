@@ -63,11 +63,12 @@ function getBrackets(teams) {
 
 function getBracket(divTeams) {
   let bracket = [],
-    game = {};
+    game = {},
+    x = divTeams.length - 1;
 
   for (let i = 0; i < (divTeams.length / 2); i++) {
     game.higher = divTeams[i];
-    game.lower = divTeams[15 - i];
+    game.lower = divTeams[x - i];
 
     bracket.push(game);
 

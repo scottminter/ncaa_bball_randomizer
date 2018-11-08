@@ -3,22 +3,28 @@ const Random = require('random');
 let secondRound = {};
 
 secondRound.getResults = function getResults (firstRoundResults) {
-console.log(firstRoundResults);  
-  getSecondRoundBrackets(firstRoundResults);
+  getTeams(firstRoundResults);
 }
 
-function getSecondRoundBrackets(results) {
-  let bracket = {
-    south: [],
-    east: [],
-    west: [],
-    midwest: []
+function getTeams(results) {
+  let teams = {
+    south: getDivisonalTeams(results.south),
+    east: getDivisonalTeams(results.east),
+    west: getDivisonalTeams(results.west),
+    midwest: getDivisonalTeams(results.midwest)
   };
+
+  console.log(JSON.stringify(teams, null, 2));
 }
 
-function getDivisionalBracket(divResults) {
+function getDivisonalTeams(results) {
+  let teams = [];
 
-  return [];
+  for (var i = 0; i < results.length; i++) {
+    teams.push(results[i].winner);
+  }
+
+  return teams;
 }
 
 module.exports = secondRound;
