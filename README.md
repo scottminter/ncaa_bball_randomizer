@@ -1,2 +1,2 @@
 # ncaa_bball_randomizer
-Randomly picks your ncaa bracket.
+Randomly picks your NCAA basketball bracket using only a random number generator.

@@ -1,0 +1,22 @@
+{
+  "name": "ncaa_bball_randomizer",
+  "version": "1.0.0",
+  "description": "Randomly picks your ncaa bracket.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottminter/ncaa_bball_randomizer.git"
+  },
+  "author": "Scott Minter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottminter/ncaa_bball_randomizer/issues"
+  },
+  "homepage": "https://github.com/scottminter/ncaa_bball_randomizer#readme",
+  "dependencies": {
+    "random": "^2.0.12"
+  }
+}
